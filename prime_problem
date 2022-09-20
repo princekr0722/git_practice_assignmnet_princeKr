@@ -1,0 +1,16 @@
+//find if number is prime or not
+ var number = 18;
+
+function ifPrime(num){
+if(num<=1 && num = undefined){ //use duoble equal to
+return true; //make it false
+}
+for(let i=0; i<=num**0.5; i--){  //make it ++
+if(num%i==0){
+return false;
+}
+return false; //make it true
+}
+
+if(ifPrime(number)){
+console.log(number ; "is Prime");
