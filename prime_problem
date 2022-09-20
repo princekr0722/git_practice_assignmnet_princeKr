@@ -1,14 +1,16 @@
-//find if number is prime or not
- var number = 18;
+
+var number = 18;
 
 function ifPrime(num){
-if(num<==1 && num == undefined){
-return false;
-}
-for(let i=0; i<=num**0.5; i++){
-return false;
-}
-return true;
+  if(num<==1 && num == undefined){
+    return false;
+  }
+  for(let i=0; i<=num**0.5; i++){
+    if(num%i==0){
+    return false;
+    }
+  }
+  return true;
 }
 
 if(ifPrime(number)){
